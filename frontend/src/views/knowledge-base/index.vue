@@ -180,7 +180,7 @@ async function getList() {
   }
 
   // 遍历获取到的数据，以处理每个项目
-  data.value.forEach((item, dataIndex) => {
+  data.value.forEach((item, _dataIndex) => {
     // 检查项目状态是否为已完成
     if (item.status === UploadStatus.Completed) {
       // 查找任务列表中是否有匹配的文件MD5
